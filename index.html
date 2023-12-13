@@ -37,12 +37,13 @@
     </picture>
     <div class="container">
       <div class="container_faq">
-        <h1><img src="assets/images/icon-star.svg" />FAQs</h1>
+        <h1><img src="assets/images/icon-star.svg" alt="Star Icon" />FAQs</h1>
         <div class="faq">
           <div class="faq__item">
             <h2>
               What is Frontend Mentor, and how will it help me?<img
                 src="assets/images/icon-plus.svg"
+                alt="Expand button"
               />
             </h2>
             <p class="hiden">
@@ -55,7 +56,10 @@
           <hr />
           <div class="faq__item">
             <h2>
-              Is Frontend Mentor free?<img src="assets/images/icon-plus.svg" />
+              Is Frontend Mentor free?<img
+                src="assets/images/icon-plus.svg"
+                alt="Expand button"
+              />
             </h2>
             <p class="hiden">
               Yes, Frontend Mentor offers both free and premium coding
@@ -68,6 +72,7 @@
             <h2>
               Can I use Frontend Mentor projects in my portfolio?<img
                 src="assets/images/icon-plus.svg"
+                alt="Expand button"
               />
             </h2>
             <p class="hiden">
@@ -80,7 +85,10 @@
           <div class="faq__item">
             <h2>
               How can I get help if I'm stuck on a Frontend Mentor
-              challenge?<img src="assets/images/icon-plus.svg" />
+              challenge?<img
+                src="assets/images/icon-plus.svg"
+                alt="Expand button"
+              />
             </h2>
             <p class="hiden">
               The best place to get help is inside Frontend Mentor's Discord
@@ -91,22 +99,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const faqs = document.querySelectorAll(".faq__item");
-      faqs.forEach((faq) => {
-        const button = faq.querySelector("h2");
-        const image = faq.querySelector("h2 img");
-        const paragraph = faq.querySelector("p");
-        button.addEventListener("click", () => {
-          if (paragraph.className === "hiden") {
-            paragraph.className = "show";
-            image.src = "assets/images/icon-minus.svg";
-          } else {
-            paragraph.className = "hiden";
-            image.src = "assets/images/icon-plus.svg";
-          }
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
