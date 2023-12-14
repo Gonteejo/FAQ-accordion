@@ -73,6 +73,10 @@ h1 img {
   font-size: 18px;
   font-weight: 600;
 }
+.faq h2 img {
+  height: 30px;
+  width: 30px;
+}
 .faq h2:hover {
   cursor: pointer;
   color: #ad28eb;

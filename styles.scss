@@ -70,6 +70,11 @@ h1 {
     font-size: 18px;
     font-weight: 600;
 
+    img {
+      height: 30px;
+      width: 30px;
+    }
+
     &:hover {
       cursor: pointer;
       color: #ad28eb;
